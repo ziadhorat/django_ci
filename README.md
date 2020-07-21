@@ -13,6 +13,8 @@ Push image to [Docker Hub](https://hub.docker.com/r/ziadhorat/django-test)
 
 CD to [Heroku](https://djangoci.herokuapp.com/)
 
+Use a manual trigger for deployments
+
 ## In-Progress
 
 CI with integrated unit-tests
