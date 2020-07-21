@@ -1,4 +1,4 @@
-name: Django
+name: Build
 
 on:
   push:
@@ -14,11 +14,11 @@ on:
         required: true
         default: 'warning'
       tags:
-        description: 'Test scenario tags'  
+        description: 'Test scenario tags'
 
 jobs:
   build-test:
-    name: Test
+    name: Build&Push
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 4
@@ -52,16 +52,3 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
         repository: ziadhorat/django-test
         tags: latest
-
-  build-deploy:
-    name: Deploy
-    needs: build-push
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: akhileshns/heroku-deploy@v3.2.6 # This is the action
-        with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "djangoci" #Must be unique in Heroku
-          heroku_email: ${{secrets.HEROKU_EMAIL}}
-          usedocker: true
