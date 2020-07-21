@@ -10,7 +10,7 @@ on:
 
 jobs:
   build-test:
-    name: Build & Test
+    name: BuildTest
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 4
@@ -28,7 +28,7 @@ jobs:
         pip install -r requirements.txt
 
   build-push:
-    name: Build & Push
+    name: Deploy
     needs: build-test
     runs-on: ubuntu-latest
     strategy:
