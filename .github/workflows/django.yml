@@ -2,12 +2,15 @@ name: Django CI
 
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
   pull_request:
-    branches: [ master ]
+    branches:
+      - master
 
 jobs:
-  build:
+  build-test:
+    name: Build & Test
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 4
@@ -24,7 +27,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-  push:
+  build-push:
+    name: Build & Push
+    needs: build-test
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 4
