@@ -1,1 +1,1 @@
-https://github.com/ziadhorat/django_ci/workflows/Test/badge.svg
+https://github.com/ziadhorat/django_ci/workflows/Django/badge.svg
