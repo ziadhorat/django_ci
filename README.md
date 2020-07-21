@@ -8,10 +8,13 @@
 ## Done
 
 Build badge experimentation
+
 Push image to [Docker Hub](https://hub.docker.com/r/ziadhorat/django-test)
+
 CD to [Heroku](https://djangoci.herokuapp.com/)
 
 ## In-Progress
 
 CI with integrated unit-tests
+
 Use of multipe workflows
