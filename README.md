@@ -2,6 +2,7 @@
 
 ![](https://github.com/ziadhorat/django_ci/workflows/Build/badge.svg)
 ![](https://github.com/ziadhorat/django_ci/workflows/Deploy/badge.svg)
+![Text](https://github.com/ziadhorat/django_ci/workflows/Test/badge.svg)
 
 [django_ci](https://github.com/ziadhorat/django_ci) is my personal experimentation with CI/CD using GitHub Actions in order to create a template I can easily copy and modify for future projects.
 
