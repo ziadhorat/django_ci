@@ -11,12 +11,14 @@ Build/Deploy/Test badge experimentation
 
 CD to [Heroku](https://djangoci.herokuapp.com/) & [Docker Hub](https://hub.docker.com/r/ziadhorat/django-test)
 
+CI with unit-tests(integrated Django tests)
+
 Use a manual trigger for deployments
 
 Use of multipe workflows
 
 ## In-Progress
 
-CI with unit-tests
-
 Make workflows dependent on each other
+
+Add cron trigger for nightly deployments
