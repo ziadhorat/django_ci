@@ -7,16 +7,16 @@
 
 ## Done
 
-Build badge experimentation
+Build/Deploy/Test badge experimentation
 
-Push image to [Docker Hub](https://hub.docker.com/r/ziadhorat/django-test)
-
-CD to [Heroku](https://djangoci.herokuapp.com/)
+CD to [Heroku](https://djangoci.herokuapp.com/) & [Docker Hub](https://hub.docker.com/r/ziadhorat/django-test)
 
 Use a manual trigger for deployments
 
+Use of multipe workflows
+
 ## In-Progress
 
-CI with integrated unit-tests
+CI with unit-tests
 
-Use of multipe workflows
+Make workflows dependent on each other
